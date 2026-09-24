@@ -1,0 +1,34 @@
+{
+  "settings": {
+    "storeName": "Librería Azul",
+    "whatsapp": "573045427219",
+    "instagram": "libreria.azulll",
+    "address": "C.C. Venecia, local 125 · La Estrella, Antioquia",
+    "hours": "Lun–Vie · 11am–7pm",
+    "shippingBase": 12000,
+    "freeShippingFrom": 120000,
+    "announcement": "Envíos a toda Colombia · Asesoría lectora por WhatsApp",
+    "recommendation": "El Principito",
+    "recommendationText": "Una historia breve para recordar lo verdaderamente importante.",
+    "logoUrl": "",
+    "heroImage": "assets/libreria-interior.jpg",
+    "storyImage": "assets/libreria-azul.jpg"
+  },
+  "products": [
+    {"id":"p1","slug":"el-mapa-de-los-anhelos","title":"El mapa de los anhelos","author":"Alice Kellen","category":"romance","mood":"enamorarme","price":25000,"stock":8,"image":"assets/mapa-anhelos.jpg","coverClass":"cover-purple","badge":"Favorito","description":"Grace recibe un misterioso juego llamado El mapa de los anhelos. Su primera misión será encontrar a Will Tucker y comenzar un viaje inesperado hacia sí misma.","pages":"496","publisher":"Planeta","format":"Tapa blanda","featured":true,"active":true},
+    {"id":"p2","slug":"boulevard","title":"Boulevard","author":"Flor M. Salvador","category":"romance","mood":"enamorarme","price":25000,"stock":12,"image":"","coverClass":"cover-boulevard","badge":"Más vendido","description":"Una historia juvenil intensa sobre dos personas rotas que crean su propio boulevard de sueños mientras aprenden a querer y dejar ir.","pages":"360","publisher":"Montena","format":"Tapa blanda","featured":true,"active":true},
+    {"id":"p3","slug":"damian","title":"Damián","author":"Alex Mírez","category":"misterio","mood":"desvelarme","price":25000,"stock":6,"image":"assets/damian.jpg","coverClass":"cover-red","badge":"Intenso","description":"Padme siente curiosidad por su misterioso vecino Damián. Esa curiosidad la llevará a un lugar donde la moral y la razón dejan de existir.","pages":"469","publisher":"Montena","format":"Tapa blanda","featured":true,"active":true},
+    {"id":"p4","slug":"dracula","title":"Drácula","author":"Bram Stoker","category":"clasicos","mood":"desvelarme","price":40000,"stock":4,"image":"","coverClass":"cover-dracula","badge":"Edición especial","description":"La novela epistolar que convirtió al conde Drácula en el vampiro más célebre de la literatura universal.","pages":"488","publisher":"Austral","format":"Tapa dura","featured":true,"active":true},
+    {"id":"p5","slug":"despues-de-el","title":"Después de él","author":"Flor M. Salvador","category":"romance","mood":"sentir-bonito","price":20000,"stock":9,"image":"","coverClass":"cover-sunset","badge":"","description":"Una historia sobre reconstruirse después de una pérdida y descubrir que algunos finales también pueden ser comienzos.","pages":"320","publisher":"Wattpad Books","format":"Tapa blanda","featured":false,"active":true},
+    {"id":"p6","slug":"el-chico-que-dibujaba-constelaciones","title":"El chico que dibujaba constelaciones","author":"Alice Kellen","category":"romance","mood":"sentir-bonito","price":25000,"stock":7,"image":"","coverClass":"cover-stars","badge":"Recomendado","description":"Una historia de amor construida con pequeños momentos, decisiones imperfectas y constelaciones compartidas.","pages":"304","publisher":"Planeta","format":"Tapa blanda","featured":false,"active":true},
+    {"id":"p7","slug":"el-huesped","title":"El huésped","author":"Stephenie Meyer","category":"juveniles","mood":"desvelarme","price":25000,"stock":3,"image":"","coverClass":"cover-eye","badge":"","description":"En un mundo ocupado por seres que controlan las mentes humanas, una joven se resiste a desaparecer por completo.","pages":"784","publisher":"Suma","format":"Tapa blanda","featured":false,"active":true},
+    {"id":"p8","slug":"el-principe-y-el-guardian","title":"El príncipe y el guardián","author":"Kiera Cass","category":"juveniles","mood":"enamorarme","price":25000,"stock":5,"image":"","coverClass":"cover-crown","badge":"","description":"Dos relatos de la saga La Selección que muestran la historia desde nuevas miradas y revelan secretos del palacio.","pages":"160","publisher":"Roca","format":"Tapa blanda","featured":false,"active":true},
+    {"id":"p9","slug":"fleur","title":"Fleur","author":"Ariana Godoy","category":"misterio","mood":"desvelarme","price":25000,"stock":10,"image":"","coverClass":"cover-flower","badge":"Novedad","description":"Una historia de secretos familiares, obsesión y peligro en la que nada es tan delicado como parece.","pages":"448","publisher":"Montena","format":"Tapa blanda","featured":false,"active":true}
+  ],
+  "reviews": [
+    {"name":"Valentina R.","text":"Me ayudaron a encontrar justo el libro que necesitaba. La atención se siente muy personal.","rating":5},
+    {"name":"Sofía M.","text":"El pedido llegó hermoso y súper bien empacado. Ya quiero elegir mi próxima lectura.","rating":5},
+    {"name":"Camila G.","text":"Amo que pueda escribirles y recibir una recomendación de verdad, no una respuesta automática.","rating":5}
+  ],
+  "subscribers": []
+}

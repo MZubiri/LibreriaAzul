@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+!.env.example
+data/catalog.json
+*.png
+.visual-*/
+npm-debug.log*
+.DS_Store

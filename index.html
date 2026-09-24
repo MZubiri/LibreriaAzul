@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Librería Azul — historias para sentir, regalar y volver a empezar." />
+  <title>Librería Azul · Libros que te encuentran</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement" id="announcement">
+    <span>Envíos a toda Colombia</span><span class="announcement-dot">✦</span><span>Asesoría lectora por WhatsApp</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Librería Azul, inicio">
+      <span class="brand-mark">LA</span>
+      <span class="brand-name">librería <strong>azul</strong></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#recomendados">Recomendados</a>
+      <a href="#nosotros">Nuestra historia</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchButton" aria-label="Buscar"><i data-lucide="search"></i></button>
+      <a class="icon-button hide-mobile" href="https://www.instagram.com/libreria.azulll/" target="_blank" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+      <button class="cart-button" id="cartButton" aria-label="Abrir bolsa">
+        <i data-lucide="shopping-bag"></i><span>Mi bolsa</span><b id="cartCount">0</b>
+      </button>
+      <button class="icon-button menu-button" id="menuButton" aria-label="Abrir menú"><i data-lucide="menu"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Librería independiente · La Estrella</p>
+        <h1>Libros que te<br><em>encuentran a ti.</em></h1>
+        <p class="hero-text">Historias para sentir, regalar y volver a empezar. Déjanos recomendarte tu próxima lectura favorita.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#catalogo">Explorar libros <i data-lucide="arrow-down-right"></i></a>
+          <a class="text-link" href="#recomendador">No sé qué leer <i data-lucide="arrow-right"></i></a>
+        </div>
+        <div class="social-proof">
+          <div class="reader-stack"><span>LA</span><span>📚</span><span>💙</span></div>
+          <p><strong>+1.000 lectores felices</strong><br>recomendando historias desde 2021</p>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="sun-stamp">leer<br>hace<br>bien ✦</div>
+        <div class="hero-photo-wrap">
+          <img id="heroImage" src="assets/libreria-interior.jpg" alt="Yajaira en el interior de Librería Azul con El Principito" />
+        </div>
+        <div class="hero-note">
+          <span class="note-icon">“</span>
+          <p>Un libro es una<br><strong>puerta abierta.</strong></p>
+        </div>
+        <svg class="hero-doodle" viewBox="0 0 150 70" aria-hidden="true"><path d="M3 51c27-35 52 17 79-13 23-26 42-8 64-32"/><path d="m132 4 14 2-5 13"/></svg>
+      </div>
+    </section>
+
+    <section class="moods section-pad" aria-labelledby="moods-title">
+      <div class="section-heading centered reveal">
+        <p class="eyebrow center"><span></span> Elige por emoción <span></span></p>
+        <h2 id="moods-title">¿Qué quieres sentir hoy?</h2>
+        <p>No siempre sabemos qué título buscar, pero sí cómo queremos sentirnos.</p>
+      </div>
+      <div class="mood-grid reveal">
+        <button class="mood-card" data-filter="romance"><span>♡</span><strong>Enamorarme</strong><small>Romance</small></button>
+        <button class="mood-card" data-filter="misterio"><span>☾</span><strong>Desvelarme</strong><small>Misterio</small></button>
+        <button class="mood-card" data-filter="motivacion"><span>↗</span><strong>Inspirarme</strong><small>Motivación</small></button>
+        <button class="mood-card" data-filter="clasicos"><span>✦</span><strong>Viajar en el tiempo</strong><small>Clásicos</small></button>
+        <button class="mood-card" data-filter="poesia"><span>❀</span><strong>Sentir bonito</strong><small>Poesía</small></button>
+      </div>
+    </section>
+
+    <section class="catalog section-pad" id="catalogo">
+      <div class="catalog-head reveal">
+        <div>
+          <p class="eyebrow"><span></span> Los más queridos</p>
+          <h2>Historias que están<br>dejando huella.</h2>
+        </div>
+        <div class="catalog-tools">
+          <div class="filters" role="group" aria-label="Filtrar catálogo">
+            <button class="filter active" data-filter="all">Todos</button>
+            <button class="filter" data-filter="romance">Romance</button>
+            <button class="filter" data-filter="misterio">Misterio</button>
+            <button class="filter" data-filter="clasicos">Clásicos</button>
+          </div>
+          <a class="text-link" href="#catalogo">Ver catálogo completo <i data-lucide="arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="book-grid" id="bookGrid"><div class="catalog-loading">Abriendo las cajas de libros…</div></div>
+      <p class="empty-state" id="emptyState">Muy pronto tendremos más títulos de esta categoría 💙</p>
+    </section>
+
+    <section class="weekly section-pad" id="recomendados">
+      <div class="weekly-card reveal">
+        <div class="weekly-label">Selección de la semana</div>
+        <div class="weekly-copy"><p class="eyebrow light"><span></span> Elegido por Librería Azul</p><h2 id="weeklyTitle">El Principito</h2><p id="weeklyText">Una historia breve para recordar lo verdaderamente importante.</p><button class="button button-yellow" id="weeklyButton">Quiero una recomendación <i data-lucide="message-circle"></i></button></div>
+        <div class="weekly-quote">“Lo esencial<br>se lee con<br>el corazón.” <span>✦</span></div>
+      </div>
+    </section>
+
+    <section class="quiz section-pad" id="recomendador">
+      <div class="quiz-art" aria-hidden="true"><div class="planet">☾</div><span class="star s1">✦</span><span class="star s2">✧</span><span class="star s3">✦</span><div class="open-book">⌒</div></div>
+      <div class="quiz-copy reveal">
+        <p class="eyebrow light"><span></span> Tu match literario</p>
+        <h2>Tu próxima historia<br>está más cerca de lo que crees.</h2>
+        <p>Cuéntanos cómo te sientes y te recomendaremos un libro hecho para tu momento.</p>
+        <button class="button button-yellow" id="quizButton">Descubrir mi próxima lectura <i data-lucide="sparkles"></i></button>
+      </div>
+      <div class="quiz-options" id="quizOptions">
+        <div class="quiz-progress"><span id="quizProgress"></span></div>
+        <small id="quizStep">Pregunta 1 de 4</small><p id="quizQuestion">¿Cómo quieres sentirte?</p>
+        <div id="quizAnswers"></div><button class="quiz-back" id="quizBack">← Volver</button>
+      </div>
+    </section>
+
+    <section class="trust section-pad">
+      <div class="trust-grid reveal">
+        <article><i data-lucide="package-check"></i><h3>Envíos nacionales</h3><p>Despachamos a toda Colombia y te compartimos el seguimiento.</p></article>
+        <article><i data-lucide="shield-check"></i><h3>Compra acompañada</h3><p>Confirmamos disponibilidad, pago y entrega directamente contigo.</p></article>
+        <article><i data-lucide="gift"></i><h3>Listo para regalar</h3><p>Pídenos empaque y dedicatoria al finalizar tu pedido.</p></article>
+        <article><i data-lucide="message-circle-heart"></i><h3>Recomendación humana</h3><p>Cuéntanos qué te gusta y te ayudamos a elegir sin respuestas automáticas.</p></article>
+      </div>
+      <div class="reviews reveal" id="reviews"></div>
+    </section>
+
+    <section class="story section-pad" id="nosotros">
+      <div class="story-photo reveal"><img id="storyImage" src="assets/libreria-azul.jpg" alt="Yajaira, fundadora de Librería Azul, frente al letrero de la tienda"><span>Desde<br><strong>2021</strong></span></div>
+      <div class="story-copy reveal">
+        <p class="eyebrow"><span></span> Una librería con historia</p>
+        <h2>Nacimos de una<br><em>idea muy simple:</em></h2>
+        <blockquote>que nadie en La Estrella tuviera que ir lejos para encontrar una buena historia.</blockquote>
+        <p>Comenzamos compartiendo libros desde casa. Hoy somos una comunidad lectora, una librería de barrio y ese lugar donde siempre puedes pedir una recomendación honesta.</p>
+        <a class="text-link" href="https://wa.me/573045427219?text=Hola%20Librería%20Azul%2C%20quiero%20una%20recomendación" target="_blank">Hablemos de libros <i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </section>
+
+    <section class="instagram section-pad">
+      <div class="ig-head reveal"><div><p class="eyebrow"><span></span> Nuestra comunidad</p><h2>Nos vemos en Instagram</h2></div><a href="https://www.instagram.com/libreria.azulll/" target="_blank">@libreria.azulll <i data-lucide="arrow-up-right"></i></a></div>
+      <div class="ig-grid reveal">
+        <a class="ig-tile photo-one" href="https://www.instagram.com/libreria.azulll/" target="_blank"><img src="assets/libreria-interior.jpg" alt="Recomendaciones desde Librería Azul"><span><i data-lucide="instagram"></i></span></a>
+        <a class="ig-tile ig-quote" href="https://www.instagram.com/libreria.azulll/" target="_blank"><small>recordatorio lector</small><strong>Está bien comprar<br>libros aunque aún<br>no termines los otros.</strong><span>💙</span></a>
+        <a class="ig-tile photo-two" href="https://www.instagram.com/libreria.azulll/" target="_blank"><img src="assets/libreria-azul.jpg" alt="Nuestra librería en La Estrella"><span><i data-lucide="instagram"></i></span></a>
+      </div>
+    </section>
+
+    <section class="newsletter section-pad">
+      <div><p class="eyebrow light"><span></span> El club de los que leen</p><h2>Cartas bonitas,<br>libros nuevos.</h2></div>
+      <form id="newsletterForm"><p>Recibe recomendaciones y novedades sin ruido.</p><div><input type="email" id="emailInput" placeholder="tu@email.com" aria-label="Correo electrónico" required><button type="submit" aria-label="Suscribirme"><i data-lucide="arrow-right"></i></button></div><small id="formMessage">Cero spam. Solo historias que valen la pena.</small></form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><a class="brand light-brand" href="#inicio"><span class="brand-mark">LA</span><span class="brand-name">librería <strong>azul</strong></span></a><p>Una librería pequeña<br>con historias enormes.</p></div>
+    <div><h4>Explora</h4><a href="#catalogo">Catálogo</a><a href="#recomendador">Recomendador</a><a href="#nosotros">Nuestra historia</a></div>
+    <div><h4>Visítanos</h4><p>C.C. Venecia, local 125<br>La Estrella, Antioquia</p><a href="https://maps.google.com" target="_blank">Ver en el mapa ↗</a></div>
+    <div><h4>Hablemos</h4><a href="https://wa.me/573045427219" target="_blank">WhatsApp</a><a href="https://www.instagram.com/libreria.azulll/" target="_blank">Instagram</a><p>Lun–Vie · 11am–7pm</p></div>
+    <div class="footer-bottom"><span>© 2026 Librería Azul</span><span>Hecho con 💙 y muchas páginas</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Mi bolsa" aria-hidden="true">
+    <div class="drawer-head"><div><small>TUS PRÓXIMAS HISTORIAS</small><h2>Mi bolsa</h2></div><button class="icon-button" id="closeCart"><i data-lucide="x"></i></button></div>
+    <div class="cart-items" id="cartItems"><div class="cart-empty"><span>♡</span><p>Tu bolsa está esperando<br>una buena historia.</p></div></div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="checkout-fields"><label>Ciudad de entrega<input id="shippingCity" placeholder="Ej. Medellín"></label><label>Forma de pago<select id="paymentMethod"><option>Transferencia</option><option>Nequi</option><option>Daviplata</option><option>Pago contraentrega (consultar)</option></select></label><label class="gift-check"><input type="checkbox" id="giftWrap"> Quiero empaque para regalo</label></div>
+      <div class="total-line"><span>Subtotal</span><strong id="cartSubtotal">$0</strong></div><div class="total-line"><span>Envío estimado</span><strong id="shippingTotal">Por calcular</strong></div><div class="total-line grand-total"><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <a id="checkoutLink" class="button button-primary" href="#" target="_blank">Confirmar por WhatsApp <i data-lucide="message-circle"></i></a><small>Confirmaremos existencias y valor exacto del envío antes del pago.</small>
+    </div>
+  </aside>
+
+  <div class="product-modal" id="productModal" aria-hidden="true"><button class="icon-button product-close" id="closeProduct"><i data-lucide="x"></i></button><div id="productContent"></div></div>
+
+  <div class="search-modal" id="searchModal" aria-hidden="true">
+    <button class="icon-button search-close" id="closeSearch"><i data-lucide="x"></i></button>
+    <p class="eyebrow center"><span></span> Encuentra tu historia <span></span></p>
+    <div class="search-field"><i data-lucide="search"></i><input id="searchInput" type="search" placeholder="Título, autor o emoción…" autocomplete="off"></div>
+    <div class="search-results" id="searchResults"><p>Prueba con “romance”, “Damián” o “clásicos”.</p></div>
+  </div>
+
+  <nav class="mobile-menu" id="mobileMenu"><button class="icon-button" id="closeMenu"><i data-lucide="x"></i></button><a href="#catalogo">Catálogo</a><a href="#recomendados">Recomendados</a><a href="#nosotros">Nuestra historia</a><a href="https://www.instagram.com/libreria.azulll/">Instagram ↗</a></nav>
+  <nav class="mobile-bottom" aria-label="Accesos rápidos"><a href="#inicio"><i data-lucide="home"></i><span>Inicio</span></a><a href="#catalogo"><i data-lucide="library"></i><span>Libros</span></a><button id="mobileSearch"><i data-lucide="search"></i><span>Buscar</span></button><button id="mobileCart"><i data-lucide="shopping-bag"></i><span>Bolsa</span><b id="mobileCartCount">0</b></button></nav>
+  <div class="toast" id="toast"><span>✓</span><p id="toastText">Libro agregado a tu bolsa</p></div>
+
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
