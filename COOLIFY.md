@@ -7,17 +7,11 @@
 3. Selecciona **Docker Compose** como Build Pack y usa `/docker-compose.yml`.
 4. Asigna el dominio al servicio `libreria-azul` en el puerto interno `3000`.
 5. Pulsa **Deploy**. Compose crea el volumen persistente `libreria_data` automáticamente.
-6. Abre **Logs** del servicio en ejecución —no el log del deployment— y copia la contraseña indicada bajo `CONTRASENA DEL PANEL`. Se muestra en cada arranque mientras no configures `ADMIN_PASSWORD` manualmente.
+6. Usa `LibreriaAzul2026!` para entrar al panel administrativo de la demo.
 7. Verifica `https://tu-dominio/health`.
 8. Entra en `https://tu-dominio/admin` y cambia textos, fotografías, productos y existencias.
 
-El contenedor escucha en `0.0.0.0:3000`, incluye un `HEALTHCHECK` y genera automáticamente `ADMIN_PASSWORD` y `SESSION_SECRET` cuando no se proporcionan. Las credenciales generadas se guardan en `/data` y sobreviven a los despliegues.
-
-Si necesitas recuperar la contraseña desde la terminal del contenedor:
-
-```bash
-cat /data/.admin-password
-```
+El contenedor escucha en `0.0.0.0:3000`, incluye un `HEALTHCHECK` y utiliza `LibreriaAzul2026!` como contraseña administrativa predeterminada para la demo. `SESSION_SECRET` se genera automáticamente y se conserva en `/data`.
 
 ## Alternativa: Dockerfile desde Git
 

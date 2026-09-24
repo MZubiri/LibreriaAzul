@@ -4,22 +4,10 @@ set -eu
 mkdir -p "${DATA_DIR:-/data}"
 chown -R app:app "${DATA_DIR:-/data}"
 
-ADMIN_FILE="${DATA_DIR:-/data}/.admin-password"
 SECRET_FILE="${DATA_DIR:-/data}/.session-secret"
 
 if [ -z "${ADMIN_PASSWORD:-}" ]; then
-  if [ -s "$ADMIN_FILE" ]; then
-    ADMIN_PASSWORD="$(cat "$ADMIN_FILE")"
-  else
-    ADMIN_PASSWORD="$(head -c 18 /dev/urandom | base64 | tr -d '\n=')"
-    printf '%s' "$ADMIN_PASSWORD" > "$ADMIN_FILE"
-    chmod 600 "$ADMIN_FILE"
-    chown app:app "$ADMIN_FILE"
-  fi
-  printf '\n========================================================\n'
-  printf ' LIBRERIA AZUL - CONTRASENA DEL PANEL\n %s\n' "$ADMIN_PASSWORD"
-  printf ' Panel: /admin\n'
-  printf '========================================================\n\n'
+  ADMIN_PASSWORD='LibreriaAzul2026!'
 fi
 
 if [ -z "${SESSION_SECRET:-}" ]; then

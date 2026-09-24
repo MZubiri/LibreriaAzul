@@ -11,7 +11,7 @@ const PORT = Number(process.env.PORT || 3000);
 const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, 'data');
 const DATA_FILE = path.join(DATA_DIR, 'catalog.json');
 const SEED_FILE = path.join(__dirname, 'data', 'seed.json');
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || crypto.randomBytes(18).toString('base64url');
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'LibreriaAzul2026!';
 const SESSION_SECRET = process.env.SESSION_SECRET || crypto.randomBytes(32).toString('hex');
 const TOKEN_TTL = 8 * 60 * 60 * 1000;
 
