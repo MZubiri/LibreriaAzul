@@ -15,11 +15,11 @@ if [ -z "${ADMIN_PASSWORD:-}" ]; then
     printf '%s' "$ADMIN_PASSWORD" > "$ADMIN_FILE"
     chmod 600 "$ADMIN_FILE"
     chown app:app "$ADMIN_FILE"
-    printf '\n========================================================\n'
-    printf ' LIBRERIA AZUL - CONTRASENA INICIAL DEL PANEL\n %s\n' "$ADMIN_PASSWORD"
-    printf ' Guardala ahora. Panel: /admin\n'
-    printf '========================================================\n\n'
   fi
+  printf '\n========================================================\n'
+  printf ' LIBRERIA AZUL - CONTRASENA DEL PANEL\n %s\n' "$ADMIN_PASSWORD"
+  printf ' Panel: /admin\n'
+  printf '========================================================\n\n'
 fi
 
 if [ -z "${SESSION_SECRET:-}" ]; then
